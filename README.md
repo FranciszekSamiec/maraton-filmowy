@@ -13,9 +13,9 @@ Program wykonuje następujące operacje:
 - delMovie <userId> <movieRating> – Użytkownik o identyfikatorze userId usuwa film o identyfikatorze movieRating ze swoich preferencji filmowych. Operacja wykonuje się w czasie liniowym względem liczby preferencji użytkownika, który usuwa film.
 
 - marathon <userId> <k> – Wyznacza co najwyżej k identyfikatorów filmów o najwyższych ocenach spośród:
-  > własnych preferencji filmowych użytkownika o identyfikatorze userId;
+  * własnych preferencji filmowych użytkownika o identyfikatorze userId;
 
-  > preferencji filmowych wyodrębnionych w wyniku przeprowadzenia operacji marathon dla każdego z potomków użytkownika userId, przy czym w     wynikowej grupie k filmów znajdą się tylko takie, które mają ocenę większą od maksymalnej oceny filmu spośród preferencji użytkownika     userId.
+  * preferencji filmowych wyodrębnionych w wyniku przeprowadzenia operacji marathon dla każdego z potomków użytkownika userId, przy czym w wynikowej grupie k filmów znajdą się tylko takie, które mają ocenę większą od maksymalnej oceny filmu spośród preferencji użytkownika  userId.
   
 Program wypisuje na standardowe wyjście:
 
